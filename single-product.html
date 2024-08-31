@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single product</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- top header -->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><b>TemplateShop</b></a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/login.html">Log-in</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/register.html">Register</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <form action="#" method="post" class="nav-link">
+              <button type="submit" class="text-white btn btn-outline-dark">Sign-out</button>
+            </form>
+            <!-- <a class="nav-link px-3" href="#">Sign-out</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- end top header -->
+
+      <div class="container-fluid">
+        <div class="row">
+            <!-- left header -->
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">
+                    <span data-feather="home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop.html">
+                    <span data-feather="file"></span>
+                    Shop
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">
+                    <span data-feather="shopping-cart"></span>
+                    About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faqs.html">
+                    <span data-feather="shopping-cart"></span>
+                    FAQs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">
+                    <span data-feather="users"></span>
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/checkout.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Checkout
+                  </a>
+                </li>
+      
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Authentication</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">
+                    <span data-feather="file-text"></span>
+                    Log-in
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register.html">
+                    <span data-feather="file-text"></span>
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <form action="#" method="post" class="">
+                    <span data-feather="file-text"></span>
+                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                  </form>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Account</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile.html">
+                    <span data-feather="file-text"></span>
+                    Profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end left header -->
+          
+          <!-- main scroling content -->
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            
+            <div class="container-fluid">
+                <!-- main content -->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                  <h1 class="h4">
+                    <a href="" class="text-dark">Home</a> /
+                    <a href="" class="text-dark">Category name</a> /
+                    <a href="" class="text-dark">Product name</a>
+                  </h1>
+                </div>
+
+                <div class="row featurette">
+                  <div class="col-md-5 order-md-2">
+                    <h2 class="featurette-heading">Product name</h2>
+                     <h5 style="color: green;">$1000</h5>
+                     <div class="mt-4 mb-4">
+                       <h6 class="text-dark">Category:</h6>
+                       <a href="#" class="text-dark">category1</a>
+                      </div>
+                     <div class="mt-4 mb-4">
+                       <h6 class="text-dark">Tags:</h6>
+                       <a href="#" class="text-dark">tag1</a>
+                       <a href="#" class="text-dark">tag2</a>
+                       <a href="#" class="text-dark">tag3</a>
+                      </div>
+                    <div class="">
+                      <form class="d-flex">
+                        <input class="form-control me-3" type="number" style="width: 10%; height: 10%;">
+                        <button class="btn btn-outline-success" type="submit">Add to cart</button>
+                      </form>
+                    </div>
+                    
+                    <div class="bd-example mt-3">
+                      <nav>
+                        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                          <p>Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                          <div>
+                            <form action="" method="post" class="needs-validation" novalidate>
+                              <div class="col-12">
+                                <label for="name"></label>
+                                <input class="form-control" type="text" name="name" placeholder="Your name">
+                              </div>
+                              <div class="col-12">
+                                <label for="email"></label>
+                                <input class="form-control" type="email" name="email" placeholder="Your email address">
+                              </div>
+                              <div class="col-12">
+                                <label for="review"></label>
+                                <textarea class="form-control" name="review" id="review" placeholder="Your review"></textarea>
+                              </div>
+                              <div class="mt-3">
+                                <button type="submit" class="btn btn-outline-secondary">Send</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img src="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"></img>
+                  </div>
+                </div>
+
+                <hr>
+                <!-- Products -->
+                <div class="album py-3 bg-white">
+                  <div class="container-fluid">
+                    
+                    <div class="mb-5">
+                      <p class="h1">Related products</p>
+                    </div>                    
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <a href="/single-product.html">
+                            <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
+                          </a>                          
+                          <div class="card-body">
+                            <a href="/single-product.html" class="text-dark">
+                              <h4>Product name</h4>
+                            </a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span class="badge rounded-pill bg-success">$10000</span>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+ 
+                    </div>
+                  </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-2">
+                      <h5>Links</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-2">
+                      <h5>Section</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-5">
+                      <h5>Contacts</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>Created in 2024 .</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+          </main>
+        </div>
+      </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

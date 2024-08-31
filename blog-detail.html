@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- top header -->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><b>TemplateShop</b></a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/login.html">Log-in</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/register.html">Register</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <form action="#" method="post" class="nav-link">
+              <button type="submit" class="text-white btn btn-outline-dark">Sign-out</button>
+            </form>
+            <!-- <a class="nav-link px-3" href="#">Sign-out</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- end top header -->
+
+      <div class="container-fluid">
+        <div class="row">
+            <!-- left header -->
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">
+                    <span data-feather="home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop.html">
+                    <span data-feather="file"></span>
+                    Shop
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">
+                    <span data-feather="shopping-cart"></span>
+                    About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faqs.html">
+                    <span data-feather="shopping-cart"></span>
+                    FAQs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">
+                    <span data-feather="users"></span>
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/checkout.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Checkout
+                  </a>
+                </li>
+      
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Authentication</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">
+                    <span data-feather="file-text"></span>
+                    Log-in
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register.html">
+                    <span data-feather="file-text"></span>
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <form action="#" method="post" class="">
+                    <span data-feather="file-text"></span>
+                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                  </form>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Account</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile.html">
+                    <span data-feather="file-text"></span>
+                    Profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end left header -->
+          
+          <!-- main scroling content -->
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Dashboard</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                  <span data-feather="calendar"></span>
+                  This week
+                </button>
+              </div>
+            </div>
+            
+            <div class="container">
+                <!-- main content -->
+                <div class="row g-5">
+                  <div class="col-md-8">
+                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                      From the Firehose
+                    </h3>
+              
+                    <article class="blog-post">
+                      <h2 class="blog-post-title">Sample blog post</h2>
+                      <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+              
+                      <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                      <hr>
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <h2>Blockquotes</h2>
+                      <p>This is an example blockquote in action:</p>
+                      <blockquote class="blockquote">
+                        <p>Quoted text goes here.</p>
+                      </blockquote>
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <h3>Example lists</h3>
+                      <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                      <ul>
+                        <li>First list item</li>
+                        <li>Second list item with a longer description</li>
+                        <li>Third list item to close it out</li>
+                      </ul>
+                      <p>And this is an ordered list:</p>
+                      <ol>
+                        <li>First list item</li>
+                        <li>Second list item with a longer description</li>
+                        <li>Third list item to close it out</li>
+                      </ol>
+                      <p>And this is a definition list:</p>
+                      <dl>
+                        <dt>HyperText Markup Language (HTML)</dt>
+                        <dd>The language used to describe and define the content of a Web page</dd>
+                        <dt>Cascading Style Sheets (CSS)</dt>
+                        <dd>Used to describe the appearance of Web content</dd>
+                        <dt>JavaScript (JS)</dt>
+                        <dd>The programming language used to build advanced Web sites and applications</dd>
+                      </dl>
+                      <h2>Inline HTML elements</h2>
+                      <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                      <ul>
+                        <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                        <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                        <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                        <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                        <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                        <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                      </ul>
+                      <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                      <h2>Heading</h2>
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <h3>Sub-heading</h3>
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <pre><code>Example code block</code></pre>
+                      <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+              
+                    <article class="blog-post">
+                      <h2 class="blog-post-title">Another blog post</h2>
+                      <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+              
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <blockquote>
+                        <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                      </blockquote>
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <h3>Example table</h3>
+                      <p>And don't forget about tables in these posts:</p>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Upvotes</th>
+                            <th>Downvotes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Alice</td>
+                            <td>10</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <td>Bob</td>
+                            <td>4</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Charlie</td>
+                            <td>7</td>
+                            <td>9</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td>Totals</td>
+                            <td>21</td>
+                            <td>23</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+              
+                      <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+              
+                    <article class="blog-post">
+                      <h2 class="blog-post-title">New feature</h2>
+                      <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+              
+                      <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                      <ul>
+                        <li>First list item</li>
+                        <li>Second list item with a longer description</li>
+                        <li>Third list item to close it out</li>
+                      </ul>
+                      <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+              
+                    <nav class="blog-pagination" aria-label="Pagination">
+                      <a class="btn btn-outline-primary" href="#">Older</a>
+                      <a class="btn btn-outline-secondary disabled">Newer</a>
+                    </nav>
+              
+                  </div>
+              
+                  <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                      <div class="p-4 mb-3 bg-light rounded">
+                        <h4 class="fst-italic">About</h4>
+                        <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                      </div>
+              
+                      <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <ol class="list-unstyled mb-0">
+                          <li><a href="#">March 2021</a></li>
+                          <li><a href="#">February 2021</a></li>
+                          <li><a href="#">January 2021</a></li>
+                          <li><a href="#">December 2020</a></li>
+                          <li><a href="#">November 2020</a></li>
+                          <li><a href="#">October 2020</a></li>
+                          <li><a href="#">September 2020</a></li>
+                          <li><a href="#">August 2020</a></li>
+                          <li><a href="#">July 2020</a></li>
+                          <li><a href="#">June 2020</a></li>
+                          <li><a href="#">May 2020</a></li>
+                          <li><a href="#">April 2020</a></li>
+                        </ol>
+                      </div>
+              
+                      <div class="p-4">
+                        <h4 class="fst-italic">Elsewhere</h4>
+                        <ol class="list-unstyled">
+                          <li><a href="#">GitHub</a></li>
+                          <li><a href="#">Twitter</a></li>
+                          <li><a href="#">Facebook</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- footer -->
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-2">
+                      <h5>Links</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-2">
+                      <h5>Section</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-5">
+                      <h5>Contacts</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>Created in 2024 .</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+          </main>
+        </div>
+      </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

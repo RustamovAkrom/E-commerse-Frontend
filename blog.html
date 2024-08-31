@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- top header -->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><b>TemplateShop</b></a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/login.html">Log-in</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/register.html">Register</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <form action="#" method="post" class="nav-link">
+              <button type="submit" class="text-white btn btn-outline-dark">Sign-out</button>
+            </form>
+            <!-- <a class="nav-link px-3" href="#">Sign-out</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- end top header -->
+
+      <div class="container-fluid">
+        <div class="row">
+            <!-- left header -->
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">
+                    <span data-feather="home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop.html">
+                    <span data-feather="file"></span>
+                    Shop
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">
+                    <span data-feather="shopping-cart"></span>
+                    About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faqs.html">
+                    <span data-feather="shopping-cart"></span>
+                    FAQs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">
+                    <span data-feather="users"></span>
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/checkout.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Checkout
+                  </a>
+                </li>
+      
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Authentication</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">
+                    <span data-feather="file-text"></span>
+                    Log-in
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register.html">
+                    <span data-feather="file-text"></span>
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <form action="#" method="post" class="">
+                    <span data-feather="file-text"></span>
+                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                  </form>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Account</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile.html">
+                    <span data-feather="file-text"></span>
+                    Profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end left header -->
+          
+          <!-- main scroling content -->
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            
+            <div class="container-fluid">
+                <!-- main content -->
+                <div class="bg-dark text-secondary px-4 py-5 text-center">
+                  <div class="py-5">
+                    <h1 class="display-5 fw-bold text-white">Blog</h1>
+                    <div class="col-lg-6 mx-auto">
+                      <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4 mb-4">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search Post" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="containe-fluid mt-5">
+                  <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    Our Posts every day
+                  </h3>
+
+                  <div class="row mb-2">
+                    <div class="col-md-6">
+                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          <strong class="d-inline-block mb-2 text-primary">World</strong>
+                          <h3 class="mb-0">Featured post</h3>
+                          <div class="mb-1 text-muted">Nov 12</div>
+                          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="/blog-detail.html" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          <strong class="d-inline-block mb-2 text-success">Design</strong>
+                          <h3 class="mb-0">Post title</h3>
+                          <div class="mb-1 text-muted">Nov 11</div>
+                          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="/blog-detail.html" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- footer -->
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-2">
+                      <h5>Links</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-2">
+                      <h5>Section</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-5">
+                      <h5>Contacts</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>Created in 2024 .</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+          </main>
+        </div>
+      </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

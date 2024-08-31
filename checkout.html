@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- top header -->
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><b>TemplateShop</b></a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/login.html">Log-in</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/register.html">Register</a>
+          </div>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <form action="#" method="post" class="nav-link">
+              <button type="submit" class="text-white btn btn-outline-dark">Sign-out</button>
+            </form>
+            <!-- <a class="nav-link px-3" href="#">Sign-out</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- end top header -->
+
+      <div class="container-fluid">
+        <div class="row">
+            <!-- left header -->
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">
+                    <span data-feather="home"></span>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop.html">
+                    <span data-feather="file"></span>
+                    Shop
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">
+                    <span data-feather="shopping-cart"></span>
+                    About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faqs.html">
+                    <span data-feather="shopping-cart"></span>
+                    FAQs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">
+                    <span data-feather="users"></span>
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Cart
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/checkout.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Checkout
+                  </a>
+                </li>
+      
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Authentication</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">
+                    <span data-feather="file-text"></span>
+                    Log-in
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register.html">
+                    <span data-feather="file-text"></span>
+                    Register
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <form action="#" method="post" class="">
+                    <span data-feather="file-text"></span>
+                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                  </form>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Account</span>
+                <a class="link-secondary" href="#" aria-label="Add a new report">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="/profile.html">
+                    <span data-feather="file-text"></span>
+                    Profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- end left header -->
+          
+          <!-- main scroling content -->
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+            <div class="container-fluid">
+                <!-- main content -->
+                <div class="container mt-5 mb-5">
+                  <div class="row g-5">
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                      <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Your cart</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                      </h4>
+                      <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Product name</h6>
+                            <small class="text-muted">Brief description</small>
+                          </div>
+                          <span class="text-muted">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Second product</h6>
+                            <small class="text-muted">Brief description</small>
+                          </div>
+                          <span class="text-muted">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                          </div>
+                          <span class="text-muted">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                          <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small>EXAMPLECODE</small>
+                          </div>
+                          <span class="text-success">−$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                          <span>Total (USD)</span>
+                          <strong>$20</strong>
+                        </li>
+                      </ul>
+              
+                      <form class="card p-2">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Promo code">
+                          <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                      <h4 class="mb-3">Billing address</h4>
+                      <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid first name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid last name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text">@</span>
+                              <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                              Please enter a valid email address for shipping updates.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback">
+                              Please enter your shipping address.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                          </div>
+              
+                          <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required="">
+                              <option value="">Choose...</option>
+                              <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid country.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required="">
+                              <option value="">Choose...</option>
+                              <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please provide a valid state.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Zip code required.
+                            </div>
+                          </div>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="same-address">
+                          <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                        </div>
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="save-info">
+                          <label class="form-check-label" for="save-info">Save this information for next time</label>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <h4 class="mb-3">Payment</h4>
+              
+                        <div class="my-3">
+                          <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                            <label class="form-check-label" for="credit">Credit card</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="debit">Debit card</label>
+                          </div>
+                          <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+              
+                        <div class="row gy-3">
+                          <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Name on card</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                            <small class="text-muted">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                              Name on card is required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Credit card number</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Credit card number is required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Expiration date required
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Security code required
+                            </div>
+                          </div>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- footer -->
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-2">
+                      <h5>Links</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-2">
+                      <h5>Section</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-5">
+                      <h5>Contacts</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>Created in 2024 .</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+          </main>
+        </div>
+      </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
