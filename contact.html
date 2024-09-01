@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- top header -->
@@ -39,111 +40,115 @@
 
       <div class="container-fluid">
         <div class="row">
-            <!-- left header -->
+          <!-- left header -->
           <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
             <div class="position-sticky pt-3">
               <ul class="nav flex-column">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/index.html">
-                    <span data-feather="home"></span>
+                    <span data-feather="home">
+                      <i class="bi bi-house"></i>
+                    </span>
                     Home
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/shop.html">
-                    <span data-feather="file"></span>
+                    <span data-feather="file">
+                      <i class="bi bi-shop"></i>
+                    </span>
                     Shop
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/about.html">
-                    <span data-feather="shopping-cart"></span>
+                    <span data-feather="shopping-cart">
+                      <i class="bi bi-book"></i>
+                    </span>
                     About
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/faqs.html">
-                    <span data-feather="shopping-cart"></span>
+                    <span data-feather="shopping-cart">
+                      <i class="bi bi-text-left"></i>
+                    </span>
                     FAQs
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/contact.html">
-                    <span data-feather="users"></span>
+                    <span data-feather="users">
+                      <i class="bi bi-phone"></i>
+                    </span>
                     Contact
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/blog.html">
-                    <span data-feather="bar-chart-2"></span>
+                    <span data-feather="bar-chart-2">
+                      <i class="bi bi-grid"></i>
+                    </span>
                     Blog
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/cart.html">
-                    <span data-feather="bar-chart-2"></span>
-                    Cart
+                    <span data-feather="bar-chart-2">
+                      <i class="bi bi-cart"></i>
+                    </span>
+                    Cart (3)
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/checkout.html">
-                    <span data-feather="bar-chart-2"></span>
+                    <span data-feather="bar-chart-2">
+                      <i class="bi bi-bag-check"></i>
+                    </span>
                     Checkout
                   </a>
                 </li>
-      
-              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Authentication</span>
-                <a class="link-secondary" href="#" aria-label="Add a new report">
-                  <span data-feather="plus-circle"></span>
-                </a>
-              </h6>
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="/login.html">
-                    <span data-feather="file-text"></span>
-                    Log-in
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                  <span>
+                    <use xlink:href="#speedometer2"></use>
+                    Account</span>
+                    <a class="link-secondary" href="#" aria-label="Add a new report">
+                    <span data-feather="plus-circle"></span>
                   </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/register.html">
-                    <span data-feather="file-text"></span>
-                    Register
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <form action="#" method="post" class="">
-                    <span data-feather="file-text"></span>
-                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
-                  </form>
-                </li>
-              </ul>
-              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Account</span>
-                <a class="link-secondary" href="#" aria-label="Add a new report">
-                  <span data-feather="plus-circle"></span>
-                </a>
-              </h6>
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="/profile.html">
-                    <span data-feather="file-text"></span>
-                    Profile
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Settings
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Cart
-                  </a>
-                </li>
-              </ul>
+                </h6>
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/profile.html">
+                      <span data-feather="file-text"></span>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="file-text"></span>
+                      Settings
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login.html">
+                      <span data-feather="file-text">
+                      </span>
+                      Log-in
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/register.html">
+                      <span data-feather="file-text"></span>
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <form action="#" method="post" class="">
+                      <span data-feather="file-text"></span>
+                      <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                    </form>
+                  </li>
+                </ul>
             </div>
           </nav>
           <!-- end left header -->
@@ -158,12 +163,12 @@
               </div>
             </div>
 
-            <!-- contact -->
             <div class="container col-xl-10 col-xxl-8 px-4 py-5">
               <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
                   <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
                   <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+                  <!-- Social contacts -->
                 </div>
                 <div class="col-md-10 mx-auto col-lg-5">
                   <form class="p-4 p-md-5 border rounded-3 bg-light">
@@ -195,10 +200,9 @@
                 </div>
               </div>
             </div>
-            <div class="container">
-                <!-- main content -->
 
-                <!-- footer -->
+            <!-- Footer -->
+            <div class="container-fluid">
                 <footer class="py-5">
                   <div class="row">
                     <div class="col-2">
@@ -245,7 +249,7 @@
                     </ul>
                   </div>
                 </footer>
-              </div>
+            </div>
           </main>
         </div>
       </div>

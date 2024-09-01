@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- top header -->
@@ -40,213 +41,226 @@
       <div class="container-fluid">
         <div class="row">
             <!-- left header -->
-          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-            <div class="position-sticky pt-3">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/index.html">
-                    <span data-feather="home"></span>
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/shop.html">
-                    <span data-feather="file"></span>
-                    Shop
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/about.html">
-                    <span data-feather="shopping-cart"></span>
-                    About
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/faqs.html">
-                    <span data-feather="shopping-cart"></span>
-                    FAQs
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">
-                    <span data-feather="users"></span>
-                    Contact
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/blog.html">
-                    <span data-feather="bar-chart-2"></span>
-                    Blog
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/cart.html">
-                    <span data-feather="bar-chart-2"></span>
-                    Cart
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/checkout.html">
-                    <span data-feather="bar-chart-2"></span>
-                    Checkout
-                  </a>
-                </li>
-      
-              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Authentication</span>
-                <a class="link-secondary" href="#" aria-label="Add a new report">
-                  <span data-feather="plus-circle"></span>
-                </a>
-              </h6>
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="/login.html">
-                    <span data-feather="file-text"></span>
-                    Log-in
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/register.html">
-                    <span data-feather="file-text"></span>
-                    Register
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <form action="#" method="post" class="">
-                    <span data-feather="file-text"></span>
-                    <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
-                  </form>
-                </li>
-              </ul>
-              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Account</span>
-                <a class="link-secondary" href="#" aria-label="Add a new report">
-                  <span data-feather="plus-circle"></span>
-                </a>
-              </h6>
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="/profile.html">
-                    <span data-feather="file-text"></span>
-                    Profile
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Settings
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Cart
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+              <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">
+                      <span data-feather="home">
+                        <i class="bi bi-house"></i>
+                      </span>
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/shop.html">
+                      <span data-feather="file">
+                        <i class="bi bi-shop"></i>
+                      </span>
+                      Shop
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about.html">
+                      <span data-feather="shopping-cart">
+                        <i class="bi bi-book"></i>
+                      </span>
+                      About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/faqs.html">
+                      <span data-feather="shopping-cart">
+                        <i class="bi bi-text-left"></i>
+                      </span>
+                      FAQs
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                      <span data-feather="users">
+                        <i class="bi bi-phone"></i>
+                      </span>
+                      Contact
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blog.html">
+                      <span data-feather="bar-chart-2">
+                        <i class="bi bi-grid"></i>
+                      </span>
+                      Blog
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cart.html">
+                      <span data-feather="bar-chart-2">
+                        <i class="bi bi-cart"></i>
+                      </span>
+                      Cart (3)
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/checkout.html">
+                      <span data-feather="bar-chart-2">
+                        <i class="bi bi-bag-check"></i>
+                      </span>
+                      Checkout
+                    </a>
+                  </li>
+        
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>
+                      <use xlink:href="#speedometer2"></use>
+                      Account</span>
+                      <a class="link-secondary" href="#" aria-label="Add a new report">
+                      <span data-feather="plus-circle"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile.html">
+                        <span data-feather="file-text"></span>
+                        Profile
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <span data-feather="file-text"></span>
+                        Settings
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login.html">
+                        <span data-feather="file-text">
+                        </span>
+                        Log-in
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/register.html">
+                        <span data-feather="file-text"></span>
+                        Register
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <form action="#" method="post" class="">
+                        <span data-feather="file-text"></span>
+                        <button type="submit" class="nav-link btn btn-outline-white">Log-out</button>
+                      </form>
+                    </li>
+                  </ul>
+              </div>
+            </nav>
           <!-- end left header -->
-          
+
           <!-- main scroling content -->
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            
-            <!-- content -->
-            <div class="modal modal-signin position-static d-block bg-white" tabindex="-1" role="dialog" id="modalSignin">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content rounded-5 shadow">
-                  <div class="modal-header p-5 pb-4 border-bottom-0">
-                    <!-- <h5 class="modal-title">Modal title</h5> -->
-                    <h2 class="fw-bold mb-0">Sign up for free</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-            
-                  <div class="modal-body p-5 pt-0">
-                    <form class="">
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                      </div>
-                      <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-                      <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                      <hr class="my-4">
-                      <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                      <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
-                        Sign up with Twitter
-                      </button>
-                      <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
-                        Sign up with Facebook
-                      </button>
-                      <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
-                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
-                        Sign up with GitHub
-                      </button>
-                    </form>
+            <div class="container-fluid">
+              
+              <!-- Login form -->
+              <div class="modal modal-signin position-static d-block bg-white" tabindex="-1" role="dialog" id="modalSignin">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-5 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <!-- <h5 class="modal-title">Modal title</h5> -->
+                      <h2 class="fw-bold mb-0">Sign up for free</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              
+                    <div class="modal-body p-5 pt-0">
+                      <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">
+                            <i class="bi bi-envelope-fill"></i>
+                            Email address
+                          </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                          <label for="floatingPassword">
+                            <i class="bi bi-key-fill"></i>
+                            Password
+                          </label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                          Sign up with Twitter
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                          Sign up with Facebook
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                          Sign up with GitHub
+                        </button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="container">
-                <!-- main content -->
-
-                <!-- footer -->
-                <footer class="py-5">
-                  <div class="row">
-                    <div class="col-2">
-                      <h5>Links</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+              <!-- Footer -->
+              <div class="container-fluid">
+                  <!-- footer -->
+                  <footer class="py-5">
+                    <div class="row">
+                      <div class="col-2">
+                        <h5>Links</h5>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-2">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-5">
+                        <h5>Contacts</h5>
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex justify-content-between py-4 my-4 border-top">
+                      <p>Created in 2024 .</p>
+                      <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
                       </ul>
                     </div>
-              
-                    <div class="col-2">
-                      <h5>Section</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-5">
-                      <h5>Contacts</h5>
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/location-dark.png" width="15" height="20" alt="">Location</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/call-dark.png" width="15" height="20" alt="">+998 90 878 62 77</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="me-2" src="/assets/img/icons/mail-dark.png" width="15" height="20" alt="">akromjonrustamov56@gmail.com</a></li>
-                      </ul>
-                    </div>
-                  </div>
-              
-                  <div class="d-flex justify-content-between py-4 my-4 border-top">
-                    <p>Created in 2024 .</p>
-                    <ul class="list-unstyled d-flex">
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/instagram-dark.png" alt="" width="25" height="25"></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/facebook-dark.png" alt="" width="25" height="25"></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/linkedin-dark.png" alt="" width="25" height="25"></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/twitter-dark.png" alt="" width="25" height="25"></a></li>
-                      <li class="ms-3"><a class="link-dark" href="#"><img src="/assets/img/icons/youtube-dark.png" alt="" width="25" height="25"></a></li>
-                    </ul>
-                  </div>
-                </footer>
+                  </footer>
               </div>
+            </div>
           </main>
         </div>
       </div>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
