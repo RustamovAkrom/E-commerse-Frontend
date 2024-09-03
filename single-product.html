@@ -202,7 +202,7 @@
                             </div>
                           </div>
                           <!-- Product description and review -->
-                          <div class="bd-example">
+                          <div class="bd-example mt-3">
                             <nav>
                               <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
@@ -219,19 +219,44 @@
                                 <!-- Review Form -->
                                 <div class="mt-1 mb-1">
                                   <form action="">
+
                                     <div class="col-10 mb-2">
                                       <input type="text" name="review" id="name" class="form-control" placeholder="Your name">
                                       <label for="name"></label>
                                     </div>
+
                                     <div class="col-10 mb-2">
                                       <input type="email" name="review" id="email" class="form-control" placeholder="Email address">
                                       <label for="email"></label>
                                     </div>
                                     <div class="col-10 mb-2">
+                                      <div>
+                                        <h6>Your rating:</h6>
+                                      </div>
+                                      <!-- star -->
+                                      <div>
+                                        <a href="#" class="text-secondary"><i class="bi-star"></i></a>
+                                        <a href="#" class="text-secondary"><i class="bi-star"></i></a>
+                                        <a href="#" class="text-secondary"><i class="bi-star"></i></a>
+                                        <a href="#" class="text-secondary"><i class="bi-star"></i></a>
+                                        <a href="#" class="text-secondary"><i class="bi-star"></i></a>
+                                      </div>
+                                      <!-- star fill -->
+                                      <div>
+                                        <a href="#" class="text-warning"><i class="bi bi-star-fill"></i></a>
+                                        <a href="#" class="text-warning"><i class="bi bi-star-fill"></i></a>
+                                        <a href="#" class="text-warning"><i class="bi bi-star-fill"></i></a>
+                                        <a href="#" class="text-warning"><i class="bi bi-star-fill"></i></a>
+                                        <a href="#" class="text-warning"><i class="bi bi-star-fill"></i></a>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-10 mb-2">
                                       <textarea name="review" id="review" class="form-control" placeholder="Your review"></textarea>
                                       <!-- <input type="text" name="review" id="review" class="form-control" placeholder="Review"> -->
                                       <label for="review"></label>
                                     </div>
+
                                     <div class="col-10 mb-2">
                                       <button type="submit" class="btn btn-outline-primary">Send</button>
                                     </div>
@@ -244,139 +269,138 @@
 
                         </div>
                         <div class="col-md-5 order-md-1">
-                          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                  
+                          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                          <img src="/assets/img/products/p10.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="">
                         </div>
                       </div>
                     </article>
 
-                    <!-- Related Products -->
-                    <div class="album py-3 bg-white">
-                      <div>
-                        <div class="mb-5">
-                          <p class="h1">Related products</p>
-                        </div>                    
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
+              <!-- Populated Products -->
+              <div class="album py-5 bg-light">
+                <div class="container">
+            
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p1.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
                             </div>
+                            <small class="text-muted">9 mins</small>
                           </div>
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card shadow-sm">
-                              <a href="/single-product.html">
-                                <img src="" class="bd-placeholder-img card-img-top bg-secondary" width="100%" height="225"></img>
-                              </a>                          
-                              <div class="card-body">
-                                <a href="/single-product.html" class="text-dark">
-                                  <h4>Product name</h4>
-                                </a>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <span class="badge rounded-pill bg-success">$10000</span>
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div>
                       </div>
                     </div>
+
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p2.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>                          
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p6.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>                          
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p7.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>                          
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p8.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>                          
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <a href="/single-product.html">
+                          <img src="/assets/img/products/p9.png" class="bd-placeholder-img card-img-top bg-light" width="100%" height="225"></img>
+                        </a>                          
+                        <div class="card-body">
+                          <a href="/single-product.html" class="text-dark">
+                            <h4>Product name</h4>
+                          </a>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-success">$10000</span>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
                   </div>
               
                   <div class="col-md-4">

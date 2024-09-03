@@ -162,134 +162,143 @@
                 <h2>Cart form</h2>
                 <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
               </div>
+
               <div>
                 <h3 class="pb-4 mb-4 fst-italic border-bottom">
                   Shopping Cart
-                  </h3>
-                  <article class="blog-post img-fluid">
-    
-                      <table class="table">
-                        <thead class="bg-dark text-white">
+                </h3>
+
+                <!-- Carts -->
+                <article class="blog-post img-fluid">
+  
+                    <table class="table">
+                      <thead class="bg-dark text-white">
+                        <tr>
+                          <th>#</th>
+                          <th>Image</th>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <div class="nav-item">
                           <tr>
-                            <th>#</th>
-                            <th>Image</th>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
+                            <td>
+                              <form action="#">
+                                <button type="submit" class="btn btn-outline-danger">X</button>
+                              </form>
+                            </td>
+                            <td>
+                              <a href="/single-product.html">
+                                <img src="assets/img/products/p1.png" width="80" height="80" class="">
+                              </a>
+                            </td>
+                            <td>
+                              <strong>Product name</strong></td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex">
+                                <input type="number" value="1" min="1" max="100">
+                                <div class="ms-3">
+                                  <button type="submit" class="btn btn-secondary">Update</button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
                           </tr>
-                        </thead>
-                        <tbody>
-                          <div>
-                            <tr>
-                              <td>
-                                <form action="#" >
-                                  <button type="submit" class="btn btn-outline-danger">X</button>
-                                </form>
-                              </td>
-                              <td>
-                                <img src="" class="img-fluid" alt="img">
-                              </td>
-                              <td><strong>Product name</strong></td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                              <td>
-                                <form action="" class="d-flex">
-                                  <input type="number" value="1" min="1" max="100">
-                                  <div class="ms-3">
-                                    <button type="submit" class="btn btn-secondary">Update</button>
-                                  </div>
-                                </form>
-                              </td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                            </tr>
-                          </div>
-                          <div>
-                            <tr>
-                              <td>
-                                <form action="#" >
-                                  <button type="submit" class="btn btn-outline-danger">X</button>
-                                </form>
-                              </td>
-                              <td>
-                                <img src="" class="img-fluid" alt="img">
-                              </td>
-                              <td><strong>Product name</strong></td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                              <td>
-                                <form action="" class="d-flex">
-                                  <input type="number" value="1" min="1" max="100">
-                                  <div class="ms-3">
-                                    <button type="submit" class="btn btn-secondary">Update</button>
-                                  </div>
-                                </form>
-                              </td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                            </tr>
-                          </div>
-                          <div>
-                            <tr>
-                              <td>
-                                <form action="#" >
-                                  <button type="submit" class="btn btn-outline-danger">X</button>
-                                </form>
-                              </td>
-                              <td>
-                                <img src="" class="img-fluid" alt="img">
-                              </td>
-                              <td><strong>Product name</strong></td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                              <td>
-                                <form action="" class="d-flex">
-                                  <input type="number" value="1" min="1" max="100">
-                                  <div class="ms-3">
-                                    <button type="submit" class="btn btn-secondary">Update</button>
-                                  </div>
-                                </form>
-                              </td>
-                              <td>
-                                <h5>$1000</h5>
-                              </td>
-                            </tr>
-                          </div>
-                        </tbody>
-                        <tfoot>
+                        </div>
+                        <div class="nav-item">
                           <tr>
-                            <td><h5>Totals</h5></td>
-                            <td colspan="4"></td>
-                            <td><h4><b style="color:green;">$3000</b></h4></td>
+                            <td>
+                              <form action="#" >
+                                <button type="submit" class="btn btn-outline-danger">X</button>
+                              </form>
+                            </td>
+                            <td>
+                              <a href="/single-product.html">
+                                <img src="assets/img/products/p2.png" width="80" height="80" class="">
+                              </a></td>
+                            <td><strong>Product name</strong></td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex">
+                                <input type="number" value="1" min="1" max="100">
+                                <div class="ms-3">
+                                  <button type="submit" class="btn btn-secondary">Update</button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
                           </tr>
-                        </tfoot>
-                      </table>
-                    </article>
-    
-                    <div class="d-flex">           
-                      <form class="card p-2">
-                        <div class="input-group">
-                          <input type="text" class="form-control me-2" placeholder="Promo code">
-                          <button type="submit" class="btn btn-secondary">Redeem</button>
                         </div>
-                      </form>
-                      <div class="d-flex ms-5">
-                        <div class="p-1">
-                          <a href="/index.html" class="btn btn-outline-secondary">Continune</a>
+                        <div class="nav-item">
+                          <tr>
+                            <td>
+                              <form action="#" >
+                                <button type="submit" class="btn btn-outline-danger">X</button>
+                              </form>
+                            </td>
+                            <td>
+                              <a href="/single-product.html">
+                                <img src="assets/img/products/p3.png" width="80" height="80" class="">
+                              </a></td>
+                            <td><strong>Product name</strong></td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
+                            <td>
+                              <form action="" class="d-flex">
+                                <input type="number" value="1" min="1" max="100">
+                                <div class="ms-3">
+                                  <button type="submit" class="btn btn-secondary">Update</button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <h5>$1000</h5>
+                            </td>
+                          </tr>
                         </div>
-                        <div class="p-1">
-                          <a href="/checkout.html" class="btn btn-outline-primary">Checkout</a>
-                        </div>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td><h5>Totals</h5></td>
+                          <td colspan="4"></td>
+                          <td><h4><b style="color:green;">$3000</b></h4></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </article>
+                  
+                  <!-- Coupon form and continune, checkout buttons -->
+                  <div class="d-flex">           
+                    <form class="card p-2">
+                      <div class="input-group">
+                        <input type="text" class="form-control me-2" placeholder="Promo code">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                      </div>
+                    </form>
+                    <div class="d-flex ms-5">
+                      <div class="p-1">
+                        <a href="/index.html" class="btn btn-outline-secondary">Continune</a>
+                      </div>
+                      <div class="p-1">
+                        <a href="/checkout.html" class="btn btn-outline-primary">Checkout</a>
                       </div>
                     </div>
-          
+                  </div>
               </div>
+              
             </div>
             <!-- Footer -->
             <div class="container-fluid">
