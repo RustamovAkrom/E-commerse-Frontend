@@ -34,4 +34,4 @@ This is a frontend web project built using **Bootstrap**. The project provides a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/E-commerce-Frontend.git
+   git clone https://github.com/RustamovAkrom/E-commerse-Frontend.git
